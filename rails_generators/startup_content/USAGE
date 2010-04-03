@@ -1,0 +1,11 @@
+Description:
+  The startup_content generator creates a content controller for home and other non-rest pages. 
+  
+Examples:
+    script/generate startup_content
+
+
+#TODO UPDATE THIS OUTPUT
+        Template:   app/views/layouts/application.html.erb
+        Stylesheet: public/stylesheets/startup.css
+        Helper:     app/helpers/startup_helper.rb

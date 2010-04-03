@@ -1,0 +1,28 @@
+0.0.0 (Aug 13th, 2009)
+
+* just getting started. Added the nav startup.
+
+0.0.1 (Oct 16th, 2009)
+
+* Added the content and layout startups. 
+* Tweaked all the startups to play nice.
+* Added better wireframe styles
+* Added examples.
+* Generating all 3 startups will get you a working example with 3 pages.
+
+0.0.2 (Oct 16th, 2009)
+
+* Added better wireframe styles
+* changed the examples so that not all nav items appear in the footer and header
+* added a 'startup' generator that runs them all at once.
+* added support to the generator commands for removing a file and running a separate generator.
+* fixed the destroy for custom route generator command to properly remove generated routes.
+* Tweaked all the startups to play nice.
+* Added examples.
+* Running a single generator (startup) now generates all 3 startups and gets you a working example with 3 pages.
+
+0.0.2.1 (Oct 19th, 2009)
+
+* Cleaned up and streamlined some things.
+
+

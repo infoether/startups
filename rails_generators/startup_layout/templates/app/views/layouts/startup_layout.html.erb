@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title><%%= layout_title %></title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<meta http-equiv="cache-control" content="no-cache"> <!-- tells browser not to cache -->
+    <meta http-equiv="expires" content="0"> <!-- says that the cache expires 'now' -->
+    <meta http-equiv="pragma" content="no-cache"> <!-- says not to use cached stuff, if there is any -->
+    <%%= javascript_include_tag :defaults %>
+    <%%= stylesheet_link_tag 'reset' %>
+    <%%# NOTE: the const_defined? check is here to allow this to function if the nav startup wasn't installed, and should be removed after the initial setup. %>
+    <%%= stylesheet_link_tag 'nav' if Object.const_defined? :NavHelper %>
+    <%%= stylesheet_link_tag 'application' %>
+  </head>
+
+  <%%= layout_body_tag %>
+    <div id="all">
+      <%%= render :partial => 'layouts/header' unless @omit_header %>
+      <div id="content">
+        <%%= layout_crumbs %>
+        <%%= layout_heading %>
+        <%% if flash[:notice] %>
+          <div class="notice confirm">
+            <%%= flash[:notice] %>
+          </div>
+        <%% end %>
+        <%% if flash[:error ] %>
+          <div class='notice error'>
+            <%%= flash[:error ]%>
+          </div>
+        <%% end %>
+        <%%#= fancy_heading unless @heading.blank? && @right_heading.blank? %>
+        <%%= yield %>
+      </div>
+      <%%= render :partial => 'layouts/footer' %>
+    </div>
+
+  </body>
+
+</html>

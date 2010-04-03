@@ -1,0 +1,11 @@
+Description:
+  The startup_layout generator creates a basic layout with the necessary helpers, stylesheet etc.
+  For now, the startup_nav startup is a prerequisite.
+  
+Examples:
+    script/generate startup_layout
+
+#TODO UPDATE THIS OUTPUT
+        Template:   app/views/layouts/application.html.erb
+        Stylesheet: public/stylesheets/startup.css
+        Helper:     app/helpers/startup_helper.rb

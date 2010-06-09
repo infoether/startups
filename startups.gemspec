@@ -10,4 +10,7 @@ Gem::Specification.new do |s|
   s.homepage          = 'http://www.infoether.com'
   
   s.add_dependency('rails', '>=2.3.4')
+
+  s.files = Dir.glob("lib/*")
+  s.files = Dir.glob("rails_generators/*")
 end

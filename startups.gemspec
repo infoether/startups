@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'startups'
-  s.version     = '0.0.3.4'
+  s.version     = '0.0.3.5'
   s.summary     = 'Rails Generators from InfoEther'
   s.description = 'Rails generators for basic infoether apps including file setup, base working styles, and more.'
 
@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   
   s.post_install_message = %q{
     ================================================================================
-    Thanks for installing InfoEther's startups gem. Thi sis under heavy development
+    Thanks for installing InfoEther's startups gem. This is under heavy development
     to match our current working setup and project templates. Let us know what you
     think! - Ryan & John
     ================================================================================

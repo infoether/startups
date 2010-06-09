@@ -17,6 +17,7 @@ script/generate startup_nav
 
 == Included Generators
 
+* startup_layout: Generates the base files for any standard app and some basic no design styles
 * startup_nav: generates the files needed for a simple, easily styled navigation.
 * startup_content: generated a content controller for home and other non-rest pages. A basic layout and stylesheet is also provided.
 

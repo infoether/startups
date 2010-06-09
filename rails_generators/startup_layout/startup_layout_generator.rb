@@ -19,6 +19,7 @@ class StartupLayoutGenerator < Rails::Generator::Base
 
       m.file "public/stylesheets/startup_layout_reset.css",  "public/stylesheets/reset.css"
       m.file "public/stylesheets/startup_layout.css",  "public/stylesheets/application.css"
+      m.file "public/stylesheets/startup_white.css", "public/stylesheets/white.css"
       m.file "public/stylesheets/startup_layout_master.css", "public/stylesheets/master.css"
       m.file "public/stylesheets/startup_layout_ie6.css", "public/stylesheets/global-ie6.css"
       m.file "public/stylesheets/startup_layout_ie7.css", "public/stylesheets/global-ie7.css"

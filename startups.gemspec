@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'startups'
-  s.version     = '0.0.3.1'
+  s.version     = '0.0.3.2'
   s.summary     = 'Rails Generators from InfoEther'
   s.description = 'Rails generators for basic infoether apps including file setup, base working styles, and more.'
 

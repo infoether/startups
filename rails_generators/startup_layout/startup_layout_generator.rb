@@ -5,6 +5,7 @@ class StartupLayoutGenerator < Rails::Generator::Base
   def manifest
     record do |m|
       m.directory 'public/stylesheets'
+      m.directory 'public/javascripts'
       m.directory 'app/helpers'
       m.directory 'app/views/layouts'
       
@@ -18,6 +19,16 @@ class StartupLayoutGenerator < Rails::Generator::Base
 
       m.file "public/stylesheets/startup_layout_reset.css",  "public/stylesheets/reset.css"
       m.file "public/stylesheets/startup_layout.css",  "public/stylesheets/application.css"
+      m.file "public/stylesheets/startup_layout_master.css", "public/stylesheets/master.css"
+      m.file "public/stylesheets/startup_layout_ie6.css", "public/stylesheets/global-ie6.css"
+      m.file "public/stylesheets/startup_layout_ie7.css", "public/stylesheets/global-ie7.css"
+      m.file "public/styelsheets/startup_layout_iepngfix.htc", "public/stylesheets/iepngfix.htc"
+
+      m.file "public/javascripts/startup_application.js", "public/javascripts/application.js"
+      m.file "public/javascripts/startup_imgSizer.js", "public/javascripts/imgSizer.js"
+      m.file "public/javascripts/startup_iepngfix.js", "public/javascripts/iepngfix_tilebg.js"
+      
+      m.file "public/images/blank.gif", "public/images/blank.gif"
 
       m.rm 'public/index.html'
     end

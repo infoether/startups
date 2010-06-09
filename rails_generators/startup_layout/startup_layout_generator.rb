@@ -23,7 +23,7 @@ class StartupLayoutGenerator < Rails::Generator::Base
       m.file "public/stylesheets/startup_layout_master.css", "public/stylesheets/master.css"
       m.file "public/stylesheets/startup_layout_ie6.css", "public/stylesheets/global-ie6.css"
       m.file "public/stylesheets/startup_layout_ie7.css", "public/stylesheets/global-ie7.css"
-      m.file "public/styelsheets/startup_layout_iepngfix.htc", "public/stylesheets/iepngfix.htc"
+      m.file "public/stylesheets/startup_layout_iepngfix.htc", "public/stylesheets/iepngfix.htc"
 
       m.file "public/javascripts/startup_application.js", "public/javascripts/application.js"
       m.file "public/javascripts/startup_imgSizer.js", "public/javascripts/imgSizer.js"

@@ -1,30 +1,30 @@
-= search_scope
+h1. Startups
 
-Rails gem with collection of Rails "startups" for features such as navigation and forms with customizable error handling.
+Rails gem with collection of Rails "startups" for features such as navigation and forms with customizable error handling, base stylesheets, base gems, etc. We welcome suggestions and code submissions to the project. 
 
-== Install
+h2. Install
 
 gem install startups
 
-== Usage
+h2. Usage
 
 After installing the gem, you can use the startup generators in your Rails app.
 
 From your rails app's root directory, type:
 script/generate startup_nav
 
-#TODO script/destroy should also work?
-
-== Included Generators
+h2. Included Generators
 
 * startup_layout: Generates the base files for any standard app and some basic no design styles
 * startup_nav: generates the files needed for a simple, easily styled navigation.
 * startup_content: generated a content controller for home and other non-rest pages. A basic layout and stylesheet is also provided.
 
-* COMING SOON: startup_form: generates the files needed for generic forms with customizable error handling.
-**   updating this to use formatastic
-
 For more information, run:
 script/generate startup_nav --help
 
+h2. TO DO 
+
+* Update to work on Rails 3
+* TODO script/destroy should also work
+* startup_form generator that woudl generate the files needed for generic forms with custom error handling (using formtastic)
 

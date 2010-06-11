@@ -1,4 +1,4 @@
-<div id="<%= (name.to_s == 'top') ? 'nav' : "#{name}_nav" %>">
+<div id="<%%= (name.to_s == 'top') ? 'nav' : "#{name}_nav" %>">
   <ul>
 <%% layout_nav_items(:<%= name %>).each do |nav_item| %>
     <li><%%= link_to_nav_item(nav_item) %></li>

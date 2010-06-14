@@ -26,5 +26,5 @@ h2. TO DO
 
 * Update to work on Rails 3
 * TODO script/destroy should also work
-* startup_form generator that woudl generate the files needed for generic forms with custom error handling (using formtastic)
+* startup_form generator that would generate the files needed for generic forms with custom error handling (using formtastic)
 

@@ -12,7 +12,7 @@ body {
   background-color: white;
   color: #333;
   font-family: Verdana, Helvetica, Arial, sans-serif;
-  font-size: 11px;
+  font-size: 68.75%; /* 11px on 16px base font size - allows MSIE to resize text in browser */
   line-height: 1.636em; /* ~18px @ 11px font-size */
   margin: 0;
   padding: 0;
@@ -56,7 +56,6 @@ h3 {
   text-rendering: optimizeLegibility;
 }
 
-
 p {
   margin-bottom: 1em; /* 11px */
 }
@@ -64,7 +63,7 @@ p {
 /* Rule lines */
 
 hr {
-  border: 0;
+  border: 0;`
   border-top: 1px solid #d7d3ce;
   margin-top: 10px;
 }
@@ -114,12 +113,16 @@ a:active {
   text-decoration: underline;
 }
 
+a:visited {
+  color: purple; /* Change me! But different than standard link */
+}
 
 /*
 ###############################################################################
 # PAGE STRUCTURE
 ###############################################################################
 */
+
 
 
 /* 

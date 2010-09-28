@@ -1,0 +1,36 @@
+<% names.each do |name| 
+    css_id = (name.to_s == 'top') ? 'nav' : "#{name}_nav"
+    selected_color = (name.to_s == 'footer') ? '#5d5e5e' : 'black'
+%>
+
+/************
+<%= css_id.upcase %> STYLES
+************/
+<% if name.to_s == 'footer' %>
+#footer_nav {float:right;}
+#footer_nav ul {list-style-type:none;}
+#footer_nav li {float:left;margin-right:20px;}
+#footer_nav a {display:block;position:relative;text-decoration:none;text-transform:uppercase;}
+#footer_nav a:visited {color:#a0a1a2;text-decoration:none;}
+#footer_nav a:link {color:#a0a1a2;text-decoration:none;}
+#footer_nav a:hover {color:#5d5e5e;text-decoration:underline;}
+#footer_nav a:active {color:#5d5e5e;text-decoration:underline;}
+<% else %>
+#<%= css_id %> {margin-left:22px;}
+#<%= css_id %> ul {list-style-type:none;overflow:auto;}
+#<%= css_id %> li {float:left;}
+#<%= css_id %> a {display:block;height:20px;padding:5px 10px;position:relative;text-decoration:none;text-transform:uppercase;}
+#<%= css_id %> a:visited {color:#a0a1a2;text-decoration:none;}
+#<%= css_id %> a:link {color:#a0a1a2;text-decoration:none;}
+#<%= css_id %> a:hover {color:#5d5e5e;text-decoration:none;}
+#<%= css_id %> a:active {color:#5d5e5e;text-decoration:none;}
+<% end %>
+
+/* any additional menu items need to be added here for them to be styled correctly when selected. */
+body#home a#<%= css_id %>_home,
+body#example a#<%= css_id %>_example,
+body#help a#<%= css_id %>_help {
+  color:<%= selected_color %>;font-weight:bold;
+}
+
+<% end %>

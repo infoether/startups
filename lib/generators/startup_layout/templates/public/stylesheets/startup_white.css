@@ -1,0 +1,23 @@
+html,body {background-color:white;font-family:Helvetica, Verdana, Arial, sans-serif;font-size:12px;height:100%;line-height:18px;margin:0px;padding:0px;}
+
+h1 {font-size: 18px; margin: 10px 0;}
+h2 {font-size: 14px; font-weight: bold;}
+h3 {font-size: 12px; font-weight: bold;}
+
+a {color:#5d5e5e;text-decoration: none;}
+a:hover, a:active {color:#5d5e5e; text-decoration: underline;}
+
+#all {background-color:white;color:#5d5e5e;min-height:100%;position:relative;}
+
+.crumbs {font-size:10px;font-weight:normal;font-style:italic;text-transform:none;height:10px;padding:0;margin:0;}
+.crumbs a {padding:0;margin:0;}
+.crumbs span {font-size:12px;margin-left:5px;margin-right:5px;}
+
+#content {overflow:auto;padding:10px 20px 0px 55px;padding-bottom:30px;width:950px;} /* bottom padding needs to match footer height */
+
+#masthead {color:#a0a1a2;height:40px;padding-top:15px;width:100%;border-bottom:1px solid #e0e1e2;}
+#masthead a:active, #masthead a:hover {color:#5d5e5e;text-decoration:underline;}
+#masthead a:link, #masthead a:visited {color:#a0a1a2;text-decoration:none;}
+
+#footer {bottom:0px;color:#a0a1a2;height:30px;position:absolute;width:100%;border-top:1px solid #e0e1e2;font-size:10px;}
+#footer_content {padding:5px 20px;padding-bottom:0px;width:950px;overflow:auto;}

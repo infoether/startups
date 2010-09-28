@@ -1,0 +1,4 @@
+<div id="masthead">
+  <%# NOTE: the const_defined? check is here to allow this to function if the nav startup wasn't installed, and should be removed after the initial setup. %>
+  <%= render :partial => 'layouts/top_nav' if Object.const_defined? :NavHelper %>
+</div>

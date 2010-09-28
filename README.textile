@@ -4,27 +4,38 @@ Rails gem with collection of Rails "startups" for features such as navigation an
 
 h2. Install
 
-gem install startups
+<pre>gem install startups</pre>
 
 h2. Usage
+
+h3. Rails 2
 
 After installing the gem, you can use the startup generators in your Rails app.
 
 From your rails app's root directory, type:
-script/generate startup_nav
+<pre>script/generate startup_nav</pre>
+
+h3. Rails 3
+
+The gem must be added to your @Gemfile@ before you can use it. Add this line:
+
+<pre>gem 'startups'</pre>
+
+From your rails app's root directory, type:
+<pre>script/rails generate startup</pre>
 
 h2. Included Generators
 
-* startup_layout: Generates the base files for any standard app and some basic no design styles
-* startup_nav: generates the files needed for a simple, easily styled navigation.
-* startup_content: generated a content controller for home and other non-rest pages. A basic layout and stylesheet is also provided.
+* @startup_layout@: Generates the base files for any standard app and some basic no design styles
+* @startup_nav@: generates the files needed for a simple, easily styled navigation.
+* @startup_content@: generated a content controller for home and other non-rest pages. A basic layout and stylesheet is also provided.
+* @startup@: Executes all the generators above.
 
 For more information, run:
-script/generate startup_nav --help
+@script/generate startup_nav --help@
 
 h2. TO DO 
 
-* Update to work on Rails 3
-* TODO script/destroy should also work
-* startup_form generator that would generate the files needed for generic forms with custom error handling (using formtastic)
+* TODO @script/destroy@ should also work
+* @startup_form@ generator that would generate the files needed for generic forms with custom error handling (using formtastic)
 

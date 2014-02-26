@@ -1,0 +1,11 @@
+Description:
+  The startup generator runs all of the startup generators, creating a ready-to-go wireframe layout with navigation and example files.
+  
+Examples:
+    script/generate startup
+
+
+#TODO UPDATE THIS OUTPUT
+        Template:   app/views/layouts/application.html.erb
+        Stylesheet: public/stylesheets/startup.css
+        Helper:     app/helpers/startup_helper.rb

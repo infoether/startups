@@ -1,0 +1,12 @@
+Description:
+  The startup_nav generator creates generic navigation with a customizable helper and stylesheet.
+  
+  With no arguments, a top_nav partial and helper_method will be generated. 
+  All arguments given to the generator will add additional nav partial and helper method. 
+  
+Examples:
+    script/generate startup_nav
+
+        Template:   app/views/layouts/_top_nav.html.erb
+        Stylesheet: public/stylesheets/nav.css
+        Helper:     app/helpers/nav_helper.rb
